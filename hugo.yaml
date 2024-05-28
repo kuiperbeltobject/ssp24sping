@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: SSP '24 Hub
 
 # import hextra as module
 module:
@@ -18,34 +18,48 @@ markup:
 
 menu:
   main:
-    - name: Docs
+    - name: General
       pageRef: /docs
       weight: 1
-    - name: About
-      pageRef: /about
+    - name: Astro
+      pageRef: /astro
       weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
+    - name: Biochem
+      pageRef: /biochem
       weight: 3
-    - name: Search
+    - name: Genomics
+      pageRef: /genomics
       weight: 4
+    - name: Synthchem
+      pageRef: /synthchem
+      weight: 5
+    - name: Blog
+      pageRef: /blog
+      weight: 6
+    - name: Search
+      weight: 7
       params:
         type: search
     - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      weight: 8
+      url: "https://github.com/kuiperbeltobject/ssp24"
       params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
 
 params:
+  page:
+    width: wide
+  theme:
+    default: system
+    displayToggle: true
+  
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
+    logo:
+      path: images/ssp.png
+      dark: images/ssp-dark.png
+      link: https://summerscience.org
 
   footer:
     displayCopyright: false
